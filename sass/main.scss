@@ -1,0 +1,35 @@
+/*
+
+BEM - Block__Element--Modifier
+
+7-1 folder architecture
+1. base - animations, typography, utilities
+2. abstracts - functions, variables, mixins
+3. components - components that are the same across all pages and can be re-used (e.g. buttons)
+4. layout - the layouts that hold components (e.g. header, sections)
+5. pages - unique styles for certain pages
+6. themes
+7. vendors - for 3rd party styles
+
+*/
+
+/* --------------------------------------------------------------*/
+/* PAGE SETUP */
+/* --------------------------------------------------------------*/
+
+// Import partial files
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+
+@import "layout/header";
+@import "layout/grid";
+
+@import "pages/home";
