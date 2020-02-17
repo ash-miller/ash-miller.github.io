@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    // Font size (1.0 rem) set to 62.5% of browser default (16) which equals 10px
+    font-size: 62.5%;
+}
+
+body {
+    padding: 3rem;
+
+    /* This will be inherited by all elements in the body re: universal selector */
+    box-sizing: border-box;
+}
