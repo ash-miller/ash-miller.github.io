@@ -1,1 +1,1 @@
-var scroll = new SmoothScroll('nav-bar a');
+$('your-element').height(window.innerHeight + 'px');
