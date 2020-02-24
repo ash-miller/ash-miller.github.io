@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1200px) {
+    html, body {
+        overflow: scroll;
+    }
+}
+
 html, body {
     overflow: hidden;
     height: 100%;
@@ -47,3 +53,4 @@ section {
         background: url(../../img/background-contact.jpeg) no-repeat center center/ cover;
     }
 }
+
