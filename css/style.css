@@ -1,0 +1,105 @@
+/*
+
+BEM - Block__Element--Modifier
+
+7-1 folder architecture
+1. base - animations, typography, utilities
+2. abstracts - functions, variables, mixins
+3. components - components that are the same across all pages and can be re-used (e.g. buttons)
+4. layout - the layouts that hold components (e.g. header, sections)
+5. pages - unique styles for certain pages
+6. themes
+7. vendors - for 3rd party styles
+
+*/
+/* --------------------------------------------------------------*/
+/* PAGE SETUP */
+/* --------------------------------------------------------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15%); }
+  60% {
+    transform: translateX(-2%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-15%); }
+  60% {
+    transform: translateX(2%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  /* This will be inherited by all elements in the body re: universal selector */
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333333; }
+
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  /* This property can fix some animation "shakyness" that may occur */
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft 1s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1.7rem;
+    animation: moveInRight 1s ease-out; }
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.7); }
+
+body {
+  height: 100vh; }
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/header-img.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
