@@ -1,5 +1,8 @@
 html, body {
     overflow: hidden;
+    height: 100%;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
