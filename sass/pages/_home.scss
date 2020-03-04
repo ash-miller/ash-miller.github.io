@@ -1,171 +1,67 @@
-@media only screen and (max-width: 1200px) {
-    html, body {
-        overflow: scroll;
-    }
-}
-
-html, body {
-    overflow: hidden;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-    position: relative;
-    height: 100vh;
+  padding: 50px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
+header {
+  position: relative;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: 100vh;
-
-    & h1 {
-        font-size: 6rem;
-    }
-
-    & p {
-        font-size: 1.5rem;
-    }
-
-    &#home {
-        background: url(../../img/background-home.jpeg) no-repeat center center/ cover;
-    }
-
-    &#about {
-        background: url(../../img/background-about.jpeg) no-repeat center center/ cover;
-    }
-
-    &#works {
-        background: url(../../img/background-works.jpeg) no-repeat center center/ cover;
-    }
-
-    &#contact {
-        background: url(../../img/background-contact.jpeg) no-repeat center center/ cover;
-    }
+.name {
+  top: 0;
+  left: 0;
+  transform: translate(100px, 100%);
+  position: absolute;
+  margin: 50px 0px 20px 50px;
 }
 
-// Image slider
-  .slider {
-    position: relative;
-    overflow: hidden;
-    height: 500px;
-    width: 500px
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    border-radius: 10px;
-  }
-  
-  .slide.current {
-    opacity: 1;
-  }
-  
-  .slide .content {
-    position: absolute;
-    text-align: left;
-    bottom: 10px;
-    left: -600px;
-    opacity: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #333;
-    padding: 10px 25px;
-  }
-  
-  .slide .content h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .slide.current .content {
-    width: 100%;
-    opacity: 1;
-    transform: translateX(600px);
-    transition: all 0.7s ease-in-out 0.3s;
-  }
-  
-  .buttons button#next {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-  }
-  
-  .buttons button#prev {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-  }
-  
-  .buttons button {
-    border: 1px solid #333;
-    background-color: transparent;
-    color: #333;
-    cursor: pointer;
-    padding: 13px 15px;
-    border-radius: 50%;
-    outline: none;
-  }
-  
-  .buttons button:hover {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  @media (max-width: 500px) {
-    .slide .content {
-      bottom: -300px;
-      left: 0;
-      width: 100%;
-    }
-  
-    .slide.current .content {
-      transform: translateY(-300px);
-    }
-  }
-  
-  
-  
-  /* Backgorund Images */
-   
-  .slide:first-child {
-    background: url('../../img/gallery/001.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(2) {
-    background: url('../../img/gallery/002.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(3) {
-    background: url('../../img/gallery/003.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(4) {
-    background: url('../../img/gallery/004.jpg') no-repeat
-      center top/cover;
-  }
-  .slide:nth-child(5) {
-    background: url('../../img/gallery/005.jpg') no-repeat
-      center top/cover;
-  } 
-  .slide:nth-child(6)  {
-    background: url('../../img/gallery/006.jpg') no-repeat
-      center center/cover;
-  }
+.title {
+  top: 0;
+  right: 0;
+  transform: translate(-100px, 100%);
+  position: absolute;
+  margin: 50px 0px 20px 50px;
+}
 
+.about {
+  bottom: 0;
+  right: 0;
+  transform: translate(-100px, 100%);
+  position: absolute;
+  margin: 50px 0px 20px 50px;
+}
+
+.container__gallery {
+  position: absolute;
+  top: 40px;
+  margin-bottom: 40px;
+  width: 75%;
+  margin: 100 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__img {
+  padding: 0 20px 20px;
+}
+
+img {
+  height: 320px;
+  width: auto;
+}
+
+img:hover {
+  opacity: .5;
+  transition: .5s;
+}
