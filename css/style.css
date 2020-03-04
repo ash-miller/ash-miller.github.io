@@ -91,7 +91,7 @@ body {
   align-items: center;
   justify-content: center; }
 
-header {
+.container__header {
   position: relative;
   position: fixed;
   width: 100vw;
@@ -144,3 +144,41 @@ img {
 img:hover {
   opacity: .5;
   transition: .5s; }
+
+@media screen and (max-width: 1170px) {
+  body {
+    padding: 10px;
+    align-items: unset;
+    justify-content: unset;
+    flex-direction: column; }
+  .container__header {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%; }
+  .container__gallery {
+    margin-top: 50px;
+    position: static;
+    width: 100%; }
+  .title {
+    position: static;
+    margin: auto;
+    transform: translate(0, 100%); }
+  .name {
+    position: static;
+    margin: auto;
+    transform: translate(0, 100%); }
+  .about {
+    position: static;
+    margin: auto;
+    transform: translate(0, 100%); } }
+
+@media screen and (max-width: 360px) {
+  .container__header {
+    flex-direction: column; }
+  .gallery-img {
+    width: auto;
+    max-width: 320px; }
+  img {
+    width: 100%; } }
