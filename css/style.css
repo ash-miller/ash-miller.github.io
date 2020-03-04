@@ -61,7 +61,7 @@ body {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1.7;
   color: #333333; }
 
@@ -145,7 +145,7 @@ img:hover {
   opacity: .5;
   transition: .5s; }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1225px) {
   body {
     padding: 10px;
     align-items: unset;
