@@ -15,6 +15,7 @@ BEM - Block__Element--Modifier
 /* --------------------------------------------------------------*/
 /* PAGE SETUP */
 /* --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -83,152 +84,63 @@ body {
     letter-spacing: 1.7rem;
     animation: moveInRight 1s ease-out; }
 
-.nav-bar {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.7); }
-  .nav-bar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center; }
-    .nav-bar ul li {
-      margin: 0 3rem;
-      padding: 1rem; }
-      .nav-bar ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #333333; }
-
-@media only screen and (max-width: 1200px) {
-  html, body {
-    overflow: scroll; } }
-
-html, body {
-  overflow: hidden;
-  height: 100%;
-  -webkit-overflow-scrolling: touch; }
-
 body {
-  position: relative;
-  height: 100vh; }
-
-.container {
-  width: 100%;
-  height: 100%; }
-
-section {
+  padding: 50px;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 100vh; }
-  section h1 {
-    font-size: 6rem; }
-  section p {
-    font-size: 1.5rem; }
-  section#home {
-    background: url(../../img/background-home.jpeg) no-repeat center center/cover; }
-  section#about {
-    background: url(../../img/background-about.jpeg) no-repeat center center/cover; }
-  section#works {
-    background: url(../../img/background-works.jpeg) no-repeat center center/cover; }
-  section#contact {
-    background: url(../../img/background-contact.jpeg) no-repeat center center/cover; }
+  justify-content: center; }
 
-.slider {
+header {
   position: relative;
-  overflow: hidden;
-  height: 500px;
-  width: 500px; }
+  position: fixed;
+  width: 100vw;
+  height: 100vh; }
 
-.slide {
-  position: absolute;
+.name {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  border-radius: 10px; }
-
-.slide.current {
-  opacity: 1; }
-
-.slide .content {
+  transform: translate(100px, 100%);
   position: absolute;
-  text-align: left;
-  bottom: 10px;
-  left: -600px;
-  opacity: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  color: #333;
-  padding: 10px 25px; }
+  margin: 50px 0px 20px 50px; }
 
-.slide .content h1 {
-  font-size: 24px;
-  margin-bottom: 10px; }
-
-.slide.current .content {
-  width: 100%;
-  opacity: 1;
-  transform: translateX(600px);
-  transition: all 0.7s ease-in-out 0.3s; }
-
-.buttons button#next {
+.title {
+  top: 0;
+  right: 0;
+  transform: translate(-100px, 100%);
   position: absolute;
-  top: 15px;
-  right: 15px; }
+  margin: 50px 0px 20px 50px; }
 
-.buttons button#prev {
+.about {
+  bottom: 0;
+  right: 0;
+  transform: translate(-100px, -100%);
   position: absolute;
-  top: 15px;
-  left: 15px; }
+  margin: 50px 0px 20px 50px; }
 
-.buttons button {
-  border: 1px solid #333;
-  background-color: transparent;
-  color: #333;
-  cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none; }
+.container__gallery {
+  position: absolute;
+  top: 40px;
+  margin-bottom: 40px;
+  width: 65%;
+  margin: 100 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
 
-.buttons button:hover {
-  background-color: #333;
-  color: #fff; }
+.gallery__img {
+  text-align: center;
+  justify-content: center;
+  padding: 0 20px 20px;
+  height: 320px;
+  width: 320px;
+  overflow: hidden; }
 
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%; }
-  .slide.current .content {
-    transform: translateY(-300px); } }
+img {
+  width: 320px; }
 
-/* Backgorund Images */
-.slide:first-child {
-  background: url("../../img/gallery/001.jpg") no-repeat center top/cover; }
-
-.slide:nth-child(2) {
-  background: url("../../img/gallery/002.jpg") no-repeat center top/cover; }
-
-.slide:nth-child(3) {
-  background: url("../../img/gallery/003.jpg") no-repeat center top/cover; }
-
-.slide:nth-child(4) {
-  background: url("../../img/gallery/004.jpg") no-repeat center top/cover; }
-
-.slide:nth-child(5) {
-  background: url("../../img/gallery/005.jpg") no-repeat center top/cover; }
-
-.slide:nth-child(6) {
-  background: url("../../img/gallery/006.jpg") no-repeat center center/cover; }
+img:hover {
+  opacity: .5;
+  transition: .5s; }
