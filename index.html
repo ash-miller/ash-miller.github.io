@@ -22,6 +22,27 @@
 
     <body>
       
+      <div class="modal" id="aboutPage">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeModal()">&times;</a>
+        <div class="modal--content">
+          <h2>
+            Hi, I'm Ash.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus dolore inventore laborum nostrum quidem odit reiciendis harum quos atque, soluta nobis officia veniam, sint, sit maiores quam iste cumque.
+          </p>
+          <div class="container__social-link">
+            <!-- <div class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div> -->
+            <div class="social-link">
+              <a href='https://www.linkedin.com/in/ashmakesart/' target='_blank'><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+
       <header class='container__header'>
         <div class='name'>
           Ashleigh Miller
@@ -30,7 +51,7 @@
           3D Artist
         </div>
         <div class='about'>
-          + About
+          <span class='about--link' onclick='openModal()'>+ About</span>
         </div>
       </header>
 
@@ -99,4 +120,14 @@
           <img src='../img/gallery/B073P3HHFT_main_2.jpg' alt=''>
         </div>
       </section>
+      <script>
+        function openModal() {
+          document.getElementById("aboutPage").style.width = "100%";
+        }
+        
+        function closeModal() {
+          document.getElementById("aboutPage").style.width = "0%";
+        }
+        </script>
+        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     </body>

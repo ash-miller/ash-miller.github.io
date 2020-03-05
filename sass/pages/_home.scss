@@ -37,6 +37,10 @@ body {
   transform: translate(-100px, -100%);
   position: absolute;
   margin: 50px 0px 20px 50px;
+
+  &--link {
+    cursor: pointer;
+  }
 }
 
 .container__gallery {
@@ -68,6 +72,34 @@ img {
 img:hover {
   opacity: .5;
   transition: .5s;
+}
+
+.container__social-link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-link {
+  font-size: 5rem;
+  text-align: center;
+  justify-content: center;
+  margin: 30px 30px;
+
+  & a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $color-grey-dark;
+
+    &:hover, &:focus {
+      color: $color-white;
+    }
+  }
+
+  
 }
 
 // 1120px
