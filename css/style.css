@@ -168,8 +168,7 @@ body {
 
 .container__gallery {
   position: absolute;
-  top: 40px;
-  margin-bottom: 40px;
+  top: 100px;
   width: 65%;
   margin: 100px auto;
   display: flex;
@@ -224,9 +223,9 @@ img:hover {
     display: flex;
     flex-direction: column;
     height: 100px;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 40px; }
   .container__gallery {
-    margin-top: 50px;
     position: static;
     width: 100%; }
   .title {
@@ -239,7 +238,7 @@ img:hover {
     transform: translate(0, 100%); }
   .about {
     position: static;
-    margin: auto;
+    margin: 30px auto;
     transform: translate(0, 100%); } }
 
 @media screen and (max-width: 360px) {

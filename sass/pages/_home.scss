@@ -45,8 +45,7 @@ body {
 
 .container__gallery {
   position: absolute;
-  top: 40px;
-  margin-bottom: 40px;
+  top: 100px;
   width: 65%;
   margin: 100px auto;
   display: flex;
@@ -118,10 +117,10 @@ body {
   flex-direction: column;
   height: 100px;
   width: 100%;
+  margin-bottom: 40px;
 }
 
 .container__gallery {
-  margin-top: 50px;
   position: static;
   width: 100%;
 }
@@ -140,7 +139,7 @@ body {
 
 .about {
   position: static;
-  margin: auto;
+  margin: 30px auto;
   transform: translate(0, 100%);
 }
 
