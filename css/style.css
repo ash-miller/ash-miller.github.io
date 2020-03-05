@@ -124,6 +124,11 @@ body {
     .modal .btn-close:hover, .modal .btn-close:focus {
       color: #ffffff; }
 
+@media screen and (max-width: 1000px) {
+  .modal--content {
+    width: 90vw;
+    font-size: 1.6rem; } }
+
 @media screen and (max-width: 450px) {
   .modal .btn-close {
     font-size: 40px;
@@ -207,12 +212,36 @@ img:hover {
   text-align: center;
   justify-content: center;
   margin: 30px 30px; }
-  .social-link a {
+  .social-link .social-link--linkedin {
     text-decoration: none;
     transition: 0.3s;
     color: #777777; }
-    .social-link a:hover, .social-link a:focus {
-      color: #ffffff; }
+    .social-link .social-link--linkedin:hover, .social-link .social-link--linkedin:focus {
+      color: #007bb5; }
+  .social-link .social-link--github {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #777777; }
+    .social-link .social-link--github:hover, .social-link .social-link--github:focus {
+      color: #f6f8fa; }
+  .social-link .social-link--email {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #777777;
+    cursor: pointer; }
+    .social-link .social-link--email:hover, .social-link .social-link--email:focus {
+      color: #f1f8ff; }
+
+.modal__link {
+  transition: 0.3s;
+  color: #ffffff; }
+  .modal__link:hover, .modal__link:focus {
+    color: #777777; }
+
+.copyright {
+  color: #777777;
+  font-size: 1.5rem;
+  opacity: .7; }
 
 @media screen and (max-width: 1225px) {
   body {

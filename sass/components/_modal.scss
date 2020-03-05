@@ -42,6 +42,13 @@
 
 }
   
+@media screen and (max-width: 1000px) {
+    .modal--content {
+        width: 90vw;
+        font-size: 1.6rem;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .modal .btn-close {
     font-size: 40px;

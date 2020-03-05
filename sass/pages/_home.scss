@@ -88,17 +88,51 @@ img:hover {
   justify-content: center;
   margin: 30px 30px;
 
-  & a {
+  & .social-link--linkedin {
     text-decoration: none;
     transition: 0.3s;
     color: $color-grey-dark;
 
     &:hover, &:focus {
-      color: $color-white;
+      color: $color-social-linkedin;
+    }
+  }
+  
+  & .social-link--github {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $color-grey-dark;
+
+    &:hover, &:focus {
+      color: $color-social-github;
     }
   }
 
-  
+  & .social-link--email {
+    text-decoration: none;
+    transition: 0.3s;
+    color: $color-grey-dark;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      color: $color-social-email;
+    }
+  }
+}
+
+.modal__link {
+  transition: 0.3s;
+  color: $color-white;
+
+  &:hover, &:focus {
+    color: $color-grey-dark;
+  }
+}
+
+.copyright {
+  color: $color-grey-dark;
+  font-size: 1.5rem;
+  opacity: .7;
 }
 
 // 1120px
