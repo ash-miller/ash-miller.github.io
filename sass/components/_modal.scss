@@ -17,7 +17,9 @@
         width: 50vw;
         margin: 30px auto;
         color: $color-grey-mid;
+        -webkit-transition: opacity 0.8s;
         transition: opacity 0.8s;
+        -webkit-transition-timing-function: ease-out;
         transition-timing-function: ease-out;
 
         & p {
