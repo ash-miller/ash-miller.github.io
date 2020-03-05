@@ -15,7 +15,7 @@ var copyToClipboard = function() {
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
-  console.log('Copied.');
+  console.log('Copied email to clipboard.');
 };
 
 var init = function(){

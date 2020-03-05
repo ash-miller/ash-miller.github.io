@@ -124,6 +124,33 @@ body {
     .modal .btn-close:hover, .modal .btn-close:focus {
       color: #ffffff; }
 
+.tooltip {
+  position: relative; }
+
+.tooltip .tooltip--text {
+  visibility: hidden;
+  width: 10em;
+  background-color: #333333;
+  color: #eeeeee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 9;
+  top: 100%;
+  left: -125%;
+  margin-left: 1em;
+  opacity: 0;
+  transition: opacity 1s;
+  font-size: 1.5rem; }
+
+.tooltip input {
+  display: none; }
+
+.tooltip input:checked + .tooltip--text {
+  visibility: visible;
+  opacity: 1; }
+
 @media screen and (max-width: 1000px) {
   .modal--content {
     width: 90vw;
