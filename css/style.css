@@ -228,6 +228,7 @@ img:hover {
     width: 100%;
     margin-bottom: 40px; }
   .container__gallery {
+    margin-top: 130px;
     position: static;
     width: 100%; }
   .title {
