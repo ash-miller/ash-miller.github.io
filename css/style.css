@@ -224,11 +224,12 @@ img:hover {
     position: static;
     display: flex;
     flex-direction: column;
+    min-height: 100px;
     height: 100px;
     width: 100%;
     margin-bottom: 40px; }
   .container__gallery {
-    margin-top: 130px;
+    margin-top: 40px;
     position: static;
     width: 100%; }
   .title {
