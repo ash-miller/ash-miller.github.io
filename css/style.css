@@ -120,13 +120,13 @@ body {
     .modal .btn-close:hover, .modal .btn-close:focus {
       color: #ffffff; }
 
-@media screen and (max-height: 450px) {
-  .modal a {
-    font-size: 20px; }
+@media screen and (max-width: 450px) {
   .modal .btn-close {
     font-size: 40px;
     top: 15px;
-    right: 35px; } }
+    right: 35px; }
+  .modal--content {
+    top: 15%; } }
 
 body {
   padding: 50px;
@@ -169,7 +169,7 @@ body {
   top: 40px;
   margin-bottom: 40px;
   width: 65%;
-  margin: 100 auto;
+  margin: 100px auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -224,7 +224,7 @@ img:hover {
     height: 100px;
     width: 100%; }
   .container__gallery {
-    margin-top: 100px;
+    margin-top: 50px;
     position: static;
     width: 100%; }
   .title {

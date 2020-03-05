@@ -38,11 +38,13 @@
 
 }
   
-@media screen and (max-height: 450px) {
-    .modal a {font-size: 20px}
+@media screen and (max-width: 450px) {
     .modal .btn-close {
     font-size: 40px;
     top: 15px;
     right: 35px;
+    }
+    .modal--content {
+        top: 15%;
     }
   }
