@@ -8,15 +8,18 @@ function closeModal() {
   document.querySelector(".modal--content").style.opacity = "0%"
 }
 
-const copyToClipboard = str => {
+var copyToClipboard = function() {
   const el = document.createElement('textarea');
-  el.value = str;
+  el.value = 'miashlei@amazon.com';
   document.body.appendChild(el);
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
+  console.log('Copied.');
 };
 
-var init = (function(){
-  document.querySelector('.social-link--email').addEventListener('click', copyToClipboard('miashlei@amazon.com'));
-})();
+var init = function(){
+  document.querySelector('.social-link--email').addEventListener('click', copyToClipboard);
+};
+
+init();
