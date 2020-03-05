@@ -108,7 +108,7 @@ body {
     width: 50vw;
     margin: 30px auto;
     color: #eeeeee;
-    transition: opacity 0.5s;
+    transition: opacity 0.8s;
     transition-timing-function: ease-out; }
     .modal--content p {
       width: 100%; }
